@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.board {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 55rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box {
+	height: 6rem;
+	aspect-ratio: 1/1;
+	border: 2px solid rgba(0, 0, 0, 0.71);
+	font-size: 5rem;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.box.over:hover {
+	background-color: transparent;
+}
+
+.winner,
+.stat {
+	font-size: 2.35rem;
+	width: 100%;
+	text-align: center;
+}
+
+.options {
+	display: flex;
+	width: 100%;
+	max-width: 55rem;
+	margin: 0 auto;
+	gap: 1rem;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+button[type='button'] {
+	order: 2;
+	font-size: 2rem;
+	padding: 0.45rem 0.35rem;
+}
